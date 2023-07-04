@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion, useCycle } from 'framer-motion'
 //assets
-import Boy from '../assets/boy.png'
+import Boy from '../assets/barong_halfbody.png'
 import Line from '../assets/line-segment.png'
 
 function Hero() {
@@ -9,7 +9,7 @@ function Hero() {
   const content = {
     header: "Hi, I'm ",
     name: "Matthew",
-    subHeader: "An aspiring Software Engineer & Frontend Developer ",
+    subHeader: "Full-Stack Web Developer. A passionate and dedicated developer!",
     subHeader2 : "that is a highly dedicated, passionate and hardworking individual."
   }
 
@@ -33,8 +33,7 @@ function Hero() {
         animate={{x:0, opacity:1}}
         transition={{delay:0.3, duration:1.2, type:'spring', bounce:0.3}}       
       >
-        <img className='w-72 sm:w-88 md:w-96 lg:w-110 mx-auto' src= { Boy } />
-        <div className='absolute top-2 left-0 bg-white w-72 h-72 sm:w-88 sm:h-88 md:w-96 md:h-96 lg:w-110 lg:h-110 -z-1 rounded-full'></div>
+        <img className=' w-80 sm:w-88 md:w-96 lg:w-110 rounded-full border-4 border-blue shadow-xl shadow-red mx-auto' src= { Boy } />
       </motion.div>
     </div>
   )

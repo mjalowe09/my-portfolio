@@ -9,7 +9,7 @@ const Box = (props) => {
   return (
     <div className='text-white flex'>
       {paths.hasWorkContent ? (
-      <div className='bg-gray-800 px-3 pt-2 pb-4 w-64  rounded-lg border-b-4 border-blue shadow-md shadow-red'>
+      <div className='bg-gray-800 px-3 pt-2 pb-4 w-88  rounded-lg border-b-4 border-blue shadow-md shadow-red'>
         <p className='text-xxs text-semibold uppercase'>{paths.date}</p>
         <h3 className='font-extrabold'>{paths.head}</h3>
         <h4 className='font-semibold text-xs pb-3'>{paths.subhead}</h4>

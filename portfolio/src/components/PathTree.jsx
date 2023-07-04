@@ -14,6 +14,8 @@ const PathTree = () => {
           <img className='absolute top-72 right-100 md-2: md-2:right-0 fill-white w-24' src = {Line}/>
           <img className='absolute top-94 right-100 md-2: md-2:right-0 fill-white w-24' src = {Line}/>
           <img className='absolute top-102 right-100 md-2: md-2:right-0 fill-white w-24' src = {Line}/>
+          <img className='absolute top-114 right-100 md-2: md-2:right-0 fill-white w-24' src = {Line}/>
+          <img className='absolute top-122 right-100 md-2: md-2:right-0 fill-white w-24' src = {Line}/>
           <div className='relative border border-transparent w-9 mx-auto mt-9'>
             <img className='absolute w-8 top-0 -left-99.5 md-2:left-0.5' src={OuterCircle} />
             <img className='absolute w-7 top-0.5 -left-99 md-2:left-1' src={InnerCircle} />
@@ -23,6 +25,10 @@ const PathTree = () => {
             <img className='absolute w-7 top-0.5 -left-99 md-2:left-1' src={InnerCircle} />
           </div>
           <div className='relative w-9 mx-auto mt-96'>
+            <img className='absolute w-8 top-0 -left-99.5 md-2:left-0.5' src={OuterCircle} />
+            <img className='absolute w-7 top-0.5 -left-99 md-2:left-1' src={InnerCircle} />
+          </div>
+          <div className='relative w-9 mx-auto mt-122'>
             <img className='absolute w-8 top-0 -left-99.5 md-2:left-0.5' src={OuterCircle} />
             <img className='absolute w-7 top-0.5 -left-99 md-2:left-1' src={InnerCircle} />
           </div>

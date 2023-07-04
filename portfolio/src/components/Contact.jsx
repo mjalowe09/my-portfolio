@@ -11,11 +11,15 @@ const Contact = () => {
 
     const [ animationState, cycleAnimation ] = useCycle("up","down")
 
+    const formhandler = () => {
+        alert("Form Submitted!")
+    }
+
     return(
         <>
         <div id='contacts' className="text-white bg-black pb-28">
             <div className="md:w-750 mx-auto md:flex ">
-                <motion.form className="bg-black py-5 px-3 border-b-4 border-blue rounded-lg w-80 sm:w-fit shadow-lg shadow-red mx-auto lg:mx-0"
+                <motion.form onSubmit={formhandler} className="bg-black py-5 px-3 border-b-4 border-blue rounded-lg w-80 sm:w-fit shadow-lg shadow-red mx-auto lg:mx-0"
                     initial="down"
                     animate={animationState}
                     variants={{
@@ -33,8 +37,6 @@ const Contact = () => {
                     <input className="w-full sm:w-72 rounded-sm pl-4 py-1.5 text-sm text-gray-800 mb-3" type="text" /><br/>
                     <label className="text-xs font-bold pb-1">Your Email</label><br/>
                     <input className="w-full sm:w-72 rounded-sm pl-4 py-1.5 text-sm text-gray-800 mb-3" type="text"/><br/>
-                    <label className="text-xs font-bold">Your Message</label><br/>
-                    <input className="w-full sm:w-72 h-32 pl-4 mb-4 rounded-sm text-sm text-gray-800" type='text'/><br />
                     <button className="text-xs font-bold p-1 rounded-md shadow-md shadow-red active:shadow-sm active:shadow-red ">
                         Submit</button>
                 </motion.form>
@@ -42,10 +44,7 @@ const Contact = () => {
                     <div className='py-5 px-3 rounded-lg'>
                         <p className="text-xxs  text-center md:text-left font-semibold">YOU CAN ALSO KEEP IN TOUCH WITH ME HERE</p>
                         <h3 className="text-3xl text-center md:text-left font-extrabold pb-6">Social Media</h3>
-                        <ul className="flex justify-between my-auto">
-                            <li>
-                                <a href='https://www.discord.com'><img className='w-12' src={Discord} /></a>
-                            </li>
+                        <ul className="flex justify-center md:justify-start gap-3 my-auto">
                             <li>
                                 <a href='https://www.facebook.com/matthewjalowe.macaranas/'><img className='w-12' src={Facebook} /></a>
                             </li>
@@ -54,9 +53,6 @@ const Contact = () => {
                             </li>
                             <li>
                                 <a href='https://www.linkedin.com/in/matthew-macaranas-a249a3276/'><img className='w-12' src={LinkedIn} /></a>
-                            </li>
-                            <li>
-                                <a href='https://www.Pinterest.com'><img className='w-12' src={Pinterest} /></a>
                             </li>
                         </ul>
                     </div>

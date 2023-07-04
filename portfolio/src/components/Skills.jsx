@@ -38,6 +38,8 @@ const Skills = () => {
 				initial={{opacity:0, x:100 }}
 				animate={animation}
 			>
+				<p className=' w-full sm:w-10/12 md:w-9/12 mx-auto text-xxs'>WHAT I USED THROUGH MY JOURNEY</p>
+				<h3 className=' w-full sm:w-10/12 md:w-9/12 mx-auto mb-10 text-3xl font-extrabold'>Technologies used</h3>
 				<div className='w-9/12 md:w-8/12 pb-14 mx-auto '>
 					<div className='grid gap-y-8 grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8'>
 						{/* HTML5 */}
